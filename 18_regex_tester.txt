@@ -1,0 +1,50 @@
+Phone Tester is:
+formats:
+\d\d\d.\d\d\d.\d\d\d\d
+\d\d\d-\d\d\d-\d\d\d\d
+\d{3}[-.]\d{3}[-.]\d{4}
+02\d{1}(-|\s)\d{8}
+solution:
+example:
+Dave Martin
+615-555-7164
+611.455.8163
+020-24363750
+022 55555555
+173 Main St., Springfield RI 55924
+davemartin@bogusemail.com
+
+
+solution:
+[^b]at
+example:
+cat
+mat
+bat
+
+solution:
+Mr\.?\s[A-Z]\w+
+Mr\.?\s[A-Z]\w*
+M(r|s|rs)\.?\s[A-Z]\w*
+example:
+Mr. Loukik
+Ms Roma
+Mrs. Samata
+Mr Satvik
+Mr. V
+
+
+solution:
+# [a-zA-Z0-9_.+-]+@[a-zA-Z0-9-] +\.[a-zA-Z0-9-.]+# [a-zA-Z0-9_.+-]+@[a-zA-Z0-9-] +\.[a-zA-Z0-9-.]+
+example:
+abcd-sc@abc.com
+
+
+
+solution:
+http(s)?://(www\.)?\w+ followed by  word character one or more
+http(s)?://(www\.)?\w+(\.|:)\w+
+example:
+https://facebook.com
+https://www.google.com
+http://localhost:8080

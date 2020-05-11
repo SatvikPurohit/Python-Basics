@@ -1,0 +1,4 @@
+*.pyc
+*.js
+.vscode/
+Libraries/__pycache__
