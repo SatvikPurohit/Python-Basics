@@ -1,3 +1,17 @@
+
+
+
+def memcheck(a):
+    print(id(a))
+    a[0] = 4
+
+arrrrr = [1,2,3]
+
+print(id(arrrrr),"check pass by reference",memcheck(arrrrr),"list is",arrrrr)
+print(id("arrrrr"),"check pass by value",id("arrrrr"),id("arrrrr1"))
+
+print()
+
 # array strings
 # String concat
 print("Heyy " "Roma")
@@ -74,8 +88,11 @@ for numb in binaryList:
 
 print()
 # Python 2 Range was data type, now in 3 its function
+
+print('List type is ', type(list()),type([]))
+print()
 small_decimals = range(1, 10)
-print('Range will not return anything ', small_decimals)
+print('Range will not return anything ', type(small_decimals))
 print('but, "index" works, return index of number from range and not list of range --> ',
       small_decimals.index(3))
 print('and number is "small_decimals[2]" --> ', small_decimals[2])
@@ -85,7 +102,7 @@ print('range(0, 5, 2) == range(0, 6, 2) "equality" works --> without list ',
       range(0, 5, 2) == range(0, 6, 2))
 print()
 print(" reverse chunk of odd", list(newSlice[::-1]))
-print("prints nothing")
+print("prints nothing as negative 3rd param not work")
 for i in range(0, 100, -2):
     print("ulta")
 print()
@@ -118,3 +135,4 @@ print("Modify a tuple 'Slicing' ", t)
 # Error
 print('Not work for tuple, "solution" --> new tupple')
 my_tuple[3] = 'Tupple'
+

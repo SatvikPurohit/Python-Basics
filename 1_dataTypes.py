@@ -5,6 +5,11 @@ print(type(A))
 A = 12
 print(type(A))
 print()
+def funcy():
+    print()
+
+print(type(funcy),"typ of function")
+print()
 # print(1 + 2 + 3 + "fu") Strongly Typed, TypeError
 
 # Data types in Python:

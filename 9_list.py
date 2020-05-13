@@ -1,5 +1,8 @@
 shopping_list = ["milk", "pasta", "spam"]
-
+print()
+print(["milk","pasta"][::2],"***")
+print(list("milk")[::2],"** List **")
+print()
 # continue: skip everything after, and next iteration continues
 # only easier to read
 for item in shopping_list:

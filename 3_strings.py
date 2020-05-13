@@ -38,6 +38,7 @@ print(dob)
 print()
 
 # reverse for
-
-for char in range(-1, len(parrot)):
+my_range = range(0,len(parrot))
+print("type of " , type(range(0))," type of range obj ", type(my_range))
+for char in range(0,len(parrot))[::-1]:
     print(parrot[char])
